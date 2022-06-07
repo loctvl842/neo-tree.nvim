@@ -1,7 +1,15 @@
-# CONFIGURATION
+# INSTALLATION
+
+```lua
+use({ "loctvl842/neo-tree.nvim", requires = {
+	"MunifTanjim/nui.nvim",
+	"kyazdani42/nvim-tree.lua",
+} })
+```
 
 ```lua
 
+# CONFIGURATION
 require("neo-tree").setup({
 	close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
 	popup_border_style = "rounded",
@@ -180,4 +188,10 @@ require("neo-tree").setup({
 		},
 	},
 })
+```
+
+# USAGE
+
+```
+Type :NeoTree and press `Tab` to see more
 ```
