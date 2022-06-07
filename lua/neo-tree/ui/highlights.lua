@@ -237,18 +237,13 @@ M.setup = function()
   create_highlight_group(M.FILE_NAME_OPENED, {}, nil, nil, "bold")
   create_highlight_group(M.SYMBOLIC_LINK_TARGET, { M.FILE_NAME })
   create_highlight_group(M.FILTER_TERM, { "SpecialChar", "Normal" })
-  create_highlight_group(M.ROOT_NAME, {}, nil, nil, "bold,italic")
+  create_highlight_group(M.ROOT_NAME, {}, nil, nil, "bold")
   create_highlight_group(M.INDENT_MARKER, { M.DIM_TEXT })
   create_highlight_group(M.EXPANDER, { M.DIM_TEXT })
   create_highlight_group(M.MODIFIED, {}, nil, "d7d787")
   create_highlight_group(M.WINDOWS_HIDDEN, { M.DOTFILE }, nil, nil)
 
-  create_highlight_group(
-    M.GIT_ADDED,
-    { "GitGutterAdd", "GitSignsAdd" },
-    nil,
-    "5faf5f"
-  )
+  create_highlight_group(M.GIT_ADDED, { "GitGutterAdd", "GitSignsAdd" }, nil, "5faf5f")
   create_highlight_group(M.GIT_DELETED, { "GitGutterDelete", "GitSignsDelete" }, nil, "ff5900")
   create_highlight_group(M.GIT_MODIFIED, { "GitGutterChange", "GitSignsChange" }, nil, "d7af5f")
   local conflict = create_highlight_group(M.GIT_CONFLICT, {}, nil, "ff8700", "italic,bold")
