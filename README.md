@@ -3,7 +3,7 @@
 ```lua
 use({ "loctvl842/neo-tree.nvim", requires = {
 	"MunifTanjim/nui.nvim",
-	"kyazdani42/nvim-tree.lua",
+	"loctvl842/dev-icons.nvim"
 } })
 ```
 
