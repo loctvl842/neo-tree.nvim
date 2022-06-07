@@ -7,9 +7,9 @@ use({ "loctvl842/neo-tree.nvim", requires = {
 } })
 ```
 
-```lua
-
 # CONFIGURATION
+
+```lua
 require("neo-tree").setup({
 	close_if_last_window = true, -- Close Neo-tree if it is the last window left in the tab
 	popup_border_style = "rounded",
