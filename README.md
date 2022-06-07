@@ -1,4 +1,4 @@
-# INSTALLATION
+### INSTALLATION
 
 ```lua
 use({ "loctvl842/neo-tree.nvim", requires = {
@@ -7,7 +7,7 @@ use({ "loctvl842/neo-tree.nvim", requires = {
 } })
 ```
 
-# CONFIGURATION
+### CONFIGURATION
 
 ```lua
 require("neo-tree").setup({
@@ -178,7 +178,7 @@ require("neo-tree").setup({
 })
 ```
 
-# USAGE
+### USAGE
 
 ```
 Type :NeoTree and press `Tab` to see more
