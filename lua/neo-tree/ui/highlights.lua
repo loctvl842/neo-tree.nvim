@@ -4,7 +4,9 @@ local vim = vim
 local M = {}
 
 M.BUFFER_NUMBER = "NeoTreeBufferNumber"
+M.CURSOR = "NeoTreeCursor"
 M.CURSOR_LINE = "NeoTreeCursorLine"
+M.CURSOR_LINE_SIGN = "NeoTreeCursorLineSign"
 M.DIM_TEXT = "NeoTreeDimText"
 M.DIRECTORY_ICON = "NeoTreeDirectoryIcon"
 M.DIRECTORY_NAME = "NeoTreeDirectoryName"
@@ -229,7 +231,11 @@ M.setup = function()
   create_highlight_group(M.FADE_TEXT_2, {}, nil, "444444")
   create_highlight_group(M.DOTFILE, {}, nil, "626262")
   create_highlight_group(M.HIDDEN_BY_NAME, { M.DOTFILE }, nil, nil)
+
+  create_highlight_group(M.CURSOR, { "Cursor" }, nil, nil)
   create_highlight_group(M.CURSOR_LINE, { "CursorLine" }, nil, nil, "bold")
+  create_highlight_group(M.CURSOR_LINE_SIGN, { "CursorLineSign" }, nil, nil, "bold")
+
   create_highlight_group(M.DIRECTORY_NAME, { "Directory" }, "NONE", "NONE")
   create_highlight_group(M.DIRECTORY_ICON, { "Directory" }, nil, "73cef4")
   create_highlight_group(M.FILE_ICON, { M.DIRECTORY_ICON })
