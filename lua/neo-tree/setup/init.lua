@@ -118,6 +118,7 @@ M.buffer_enter_event = function()
   end
 
   if last_buffer_enter_filetype == "neo-tree" then
+    vim.cmd([[setlocal guicursor=n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20]])
     events.fire_event(events.NEO_TREE_BUFFER_LEAVE)
   end
   if last_buffer_enter_filetype == "neo-tree-popup" then

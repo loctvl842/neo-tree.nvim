@@ -179,14 +179,3 @@ require("neo-tree").setup({
 
 ### USAGE
 Type `:NeoTree` and press `Tab` to see more
-
-### FIX CURSOR FOR NEOVIM
-Add this to the `autocommand`:
-
-```lua
-augroup neo_tree_cursor
-	autocmd!
-	autocmd WinLeave * setlocal guicursor=n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20
-augroup END
-```
-
