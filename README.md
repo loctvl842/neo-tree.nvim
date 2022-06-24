@@ -6,6 +6,17 @@ use({ "loctvl842/neo-tree.nvim", requires = {
 	"loctvl842/dev-icons.nvim"
 } })
 ```
+### FIX CURSOR FOR NEOVIM
+```
+Add this to the `autocommand`:
+
+```
+```lua
+	augroup neo_tree_cursor
+		autocmd!
+		autocmd WinLeave * setlocal guicursor=n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20
+	augroup END
+```
 
 ### CONFIGURATION
 
