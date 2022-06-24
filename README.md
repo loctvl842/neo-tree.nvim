@@ -7,10 +7,8 @@ use({ "loctvl842/neo-tree.nvim", requires = {
 } })
 ```
 ### FIX CURSOR FOR NEOVIM
-```
 Add this to the `autocommand`:
 
-```
 ```lua
 	augroup neo_tree_cursor
 		autocmd!
@@ -190,7 +188,4 @@ require("neo-tree").setup({
 ```
 
 ### USAGE
-
-```
-Type :NeoTree and press `Tab` to see more
-```
+Type `:NeoTree` and press `Tab` to see more
