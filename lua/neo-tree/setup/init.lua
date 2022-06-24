@@ -98,13 +98,14 @@ M.buffer_enter_event = function()
     setlocal cursorline
 		setlocal guicursor=n-v-c:block-Cursor,i:ver100-iCursor,n-v-c:blinkon0,i:blinkwait10
     setlocal nowrap
-    setlocal winhighlight=Normal:NeoTreeNormal,NormalNC:NeoTreeNormalNC,SignColumn:NeoTreeSignColumn,Cursor:NeoTreeCursor,CursorLine:NeoTreeCursorLine,CursorLineSign:NeoTreeCursorLineSign,FloatBorder:NeoTreeFloatBorder,StatusLine:NeoTreeStatusLine,StatusLineNC:NeoTreeStatusLineNC,VertSplit:NeoTreeVertSplit,WinSeparator:NeoTreeWinSeparator,EndOfBuffer:NeoTreeEndOfBuffer
+    setlocal winhighlight=Normal:NeoTreeNormal,NormalNC:NeoTreeNormalNC,SignColumn:NeoTreeSignColumn,CursorLine:NeoTreeCursorLine,CursorLineSign:NeoTreeCursorLineSign,FloatBorder:NeoTreeFloatBorder,StatusLine:NeoTreeStatusLine,StatusLineNC:NeoTreeStatusLineNC,VertSplit:NeoTreeVertSplit,WinSeparator:NeoTreeWinSeparator,EndOfBuffer:NeoTreeEndOfBuffer
     setlocal nolist nospell nonumber norelativenumber
     ]])
     events.fire_event(events.NEO_TREE_BUFFER_ENTER)
     last_buffer_enter_filetype = vim.bo.filetype
     return
   end
+
   if vim.bo.filetype == "neo-tree-popup" then
     vim.cmd([[
     setlocal winhighlight=Normal:NeoTreeNormal,FloatBorder:NeoTreeFloatBorder
