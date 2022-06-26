@@ -96,7 +96,7 @@ M.buffer_enter_event = function()
   if vim.bo.filetype == "neo-tree" then
     vim.cmd([[
     setlocal cursorline
-		setlocal guicursor=n-v-c:block-Cursor
+		setlocal guicursor=n:block-Cursor
 		hi Cursor blend=100
     setlocal nowrap
     setlocal winhighlight=Normal:NeoTreeNormal,NormalNC:NeoTreeNormalNC,SignColumn:NeoTreeSignColumn,Cursor:Cursor,Cursor:NeoTreeCursor,CursorLine:NeoTreeCursorLine,CursorLineSign:NeoTreeCursorLineSign,FloatBorder:NeoTreeFloatBorder,StatusLine:NeoTreeStatusLine,StatusLineNC:NeoTreeStatusLineNC,VertSplit:NeoTreeVertSplit,WinSeparator:NeoTreeWinSeparator,EndOfBuffer:NeoTreeEndOfBuffer
